@@ -1,0 +1,21 @@
+PROXMOX
+
+-----------------------------
+Upload an OVA into Proxmox
+-----------------------------
+
+WIN_SCP the OVA to the Proxmox
+CLI into Proxmox
+mv "GNS3 VM.ova" GNS3_VM.ova           					#rename file to remove spaces
+tar xfv GNS3_VM.ova                  					#pull files out of the o
+qm importdisk <103> <GNS3_VM-disk1.vmdk> local-lvm 			#import vmdk disk1 to VM
+qm importdisk <103> <GNS3_VM-disk2.vmdk> local-lvm
+cp /etc/pve/qemu-server/102.conf /etc/pve/qemu-server/102.conf_backup   #copy incase you screw it up
+nano /etc/pve/qemu-server/102.conf    					#notepad to change the harddrive locations
+		
+----------------------------------
+Proxmox Virtual Environment (pve)
+----------------------------------
+systemctl stop pvebanner						#stop auto updae to the banner
+systemctl disable pvebanner						#stop banner from defaulting
+nano /etc/init.d/pvebanner						#edit the pve
