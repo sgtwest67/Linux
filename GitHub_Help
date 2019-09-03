@@ -1,0 +1,7 @@
+cd to the file you want to push
+git clone https://github.com/sgtwest67/Linux		#clones Github into the home/
+git init						#puts a temp directory in cd
+git add <File>						#add the file you want to push
+git commit -m <File>					#selects the files you want to commit
+git push https://github.com/sgtwest67/Linux		#push the changes back to GitHub
+rm -rf <Repository name>				#removes the git repository
