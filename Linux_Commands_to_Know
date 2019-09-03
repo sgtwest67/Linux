@@ -1,0 +1,29 @@
+######################################################################################
+                        ------Linux Commands to Know-------
+######################################################################################
+
+------------DIRECTORY-----------------
+ls                                 #list directory
+cd                                 #change directory
+mkdir                              #make directory
+vim                                #notpad
+rm                                 #remove file
+sudo fdisk -l                      #show the disks/partitions
+../                                #go up one directory
+-------------VIM---------------------
+set cursorline                     #show line with cursor
+set ignorecase                     #ignore cases when searching
+set linebreak                      #avoid wrapping a line in the middle of a word
+set mouse=a                        #enable mouse for scrolling and resizing
+
+
+------------USB/HDD-------------------
+View thumb drive name (ls /run/media/sgtwest/)
+View thumb drive (ls /run/media/sgtwest/USB20FD)
+
+
+-----------FIND COMMANDS--------------
+apropos <topic to find>          
+locate <find a binary>
+man <command> manual pages
+
